@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mohamed Billy Camara</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==== HEADER ==== -->
+  <header>
+   <a href="#" class="logo">
+  <img src="MHD.jpeg" alt="Billy" class="logo-img">
+  <h1 class="logo-text">Portfolio <span>.</span></h1>
+</a>
+
+
+    <nav class="navbar">
+      <a href="#home" class="active">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">contact</a>
+      <a href="#Certificat">Certificat</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- ==== SECTION ACCUEIL ==== -->
+  <div class="home" id="home">
+    <div class="content">
+      <h1>Salut, je suis <span>Mohamed Camara</span></h1>
+      <h3>Développeur web & passionné de cybersécurité</h3>
+      <p>Étudiant en Mathémmatiques-Informatique, A la croisée des mathémaatiques et de l'informatique, je cultive une passion profonde pour la cybersécurité et les technologies émergentes. Mon parcours est guidé par une quête de compréhension rigoureuse, une curiosité insatiable et un engagement à batir des systèmes plus sûrs et intelligents. Consolidé par les formations certifiantes en CCNA et CEH, A travers ce portfolio, je partage mes projets, mes réflexions et mes exploration techniques, avec l'ambition de contribuer activement à un monde numérique plus résilient..</p>
+      <a href="#projects" class="btn">Voir mes projets</a>
+    </div>
+  </div>
+
+  <!-- ==== SECTION À PROPOS ==== -->
+   <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1"></div>
+    <h1 class="heading">A propos </h1>
+    <p class="cursus">Mon parcours en Mathématiques-Informatique s'est structuré autour <br>d'une spécialisation progressive en réseau, cybersécurité et développement web, <br>soutenue par des formations certifiantes et des expériences techniques apppliquées.</p>
+       <div class="tab-titles">
+        <p class="tab-links">Compétences</p>
+        <p class="tab-links">Experiences Professionel</p>
+        <p class="tab-links">Education</p>
+        <p class="tab-links">Formations Extra-scolaire</p>
+       </div>
+         </div>
+      </div>
+   </div>
+    
+    <div class="container"> 
+        <div class="download-section">
+            <p >
+                Téléchargez mon CV pour en savoir plus sur mon parcours et mes compétences.
+            </p>
+
+            <button class="download-btn" onclick="downloadCV()">
+                <span>📄</span>
+                Télécharger mon CV
+            </button>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        Téléchargement en cours...
+    </div> 
+
+
+  <!-- ==== SECTION PROJETS ==== -->
+  <section class="projects" id="projects">
+    <h2 class="heading">Mes <span>Projets</span></h2>
+    <div class="box-container">
+      <div class="box">
+        <img src="img/project1.jpg" alt="">
+        <h3>Gestion scolaire Excel</h3>
+        <p>Tableau Excel automatisé pour gérer les inscriptions, paiements et notes.</p>
+      </div>
+
+      <div class="box">
+        <img src="img/project2.jpg" alt="">
+        <h3>Site web portfolio</h3>
+        <p>Création d’un site web personnel en HTML, CSS et JavaScript.</p>
+      </div>
+
+      <div class="box">
+        <img src="img/project3.jpg" alt="">
+        <h3>Analyse réseau Cisco</h3>
+        <p>Simulation réseau et configuration IPv4/IPv6 sur Cisco Packet Tracer.</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- ==== SECTION CERTIFICAT ==== -->
+  <section class="Certificat" id="Certificat">
+    <h5 class="heading"><span>Certification</span></h5>
+    <div class="box-contain">
+      <div class="bx">
+        <img src="Mehd.jpg" alt="">
+        <h4>Certificat - Introduction To Network - ITNV7</h4>
+        <p>Cisco Certified Networking Academy - CCNA1.</p>
+      </div>
+
+      <div class="bx">
+        <img src="badge.png" alt="">
+        <h4>Badge</h4>
+        <p>CCNA 200-301.</p>
+      </div>
+
+      
+    </div>
+  </section>
+  
+  <!-- ==== SECTION CONTACT ==== -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Me <span>Contacter</span></h2>
+    <form action="#">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <input type="submit" value="Envoyer" class="btn">
+    </form>
+  </section>
+
+  <section class="social-section">
+        <h2>Retrouvez-moi sur</h2>
+        <div class="social-cards">
+            <a href="https://www.linkedin.com/in/mohamed-billy-camara-87955a299" class="social-card linkedin" onclick="openLinkedIn()" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span class="platform">LinkedIn</span>
+                <span class="username">Mohamed Camara</span>
+            </a>
+            
+            
+        </div>
+    </section>
+  <footer>
+    <p>© 2025 Mohamed Billy Camara | Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
